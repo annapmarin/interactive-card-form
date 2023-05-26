@@ -1,7 +1,15 @@
 import { useState } from "react";
+import React from "react";
 import iconComplete from "../assets/images/icon-complete.svg";
 
-export default function Form({ sendName, sendNumber, sendMonth, sendYear }) {
+type FormProps = {
+  sendName: string,
+  sendNumber: number,
+  sendMonth: number,
+  sendYear: number
+}
+
+const Form:React.FC<FormProps> = ({ sendName, sendNumber, sendMonth, sendYear }) => {
   const [nameError, setNameError] = useState(false);
   const [numberError, setNumberError] = useState(false);
   const [monthError, setMonthError] = useState(false);
@@ -288,3 +296,5 @@ export default function Form({ sendName, sendNumber, sendMonth, sendYear }) {
     );
   }
 }
+
+export default Form;
