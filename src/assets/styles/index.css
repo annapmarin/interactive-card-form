@@ -23,9 +23,9 @@
 }
 @media (min-width: 950px) {
   .cards__text__number {
-    left: 30rem;
-    top: 26.1111111111rem;
-    font-size: 1.9444444444rem;
+    left: 18rem;
+    top: 16.1rem;
+    font-size: 1.5rem;
   }
 }
 .cards__text__name {
@@ -39,9 +39,9 @@
 }
 @media (min-width: 950px) {
   .cards__text__name {
-    left: 30rem;
-    top: 30.5555555556rem;
-    font-size: 1.1111111111rem;
+    left: 18rem;
+    top: 19rem;
+    font-size: 1rem;
   }
 }
 .cards__text__expiration {
@@ -54,8 +54,8 @@
 }
 @media (min-width: 950px) {
   .cards__text__expiration {
-    left: 51.2rem;
-    top: 30.7222222222rem;
+    left: 35rem;
+    top: 19.1rem;
     font-size: 0.8333333333rem;
   }
 }
@@ -69,9 +69,9 @@
 }
 @media (min-width: 950px) {
   #card-back {
-    width: 33rem;
-    left: 20rem;
-    top: 40rem;
+    width: 25rem;
+    left: 11rem;
+    top: 24rem;
   }
 }
 
@@ -84,9 +84,9 @@
 }
 @media (min-width: 950px) {
   #card-front {
-    width: 33rem;
-    left: 25.7rem;
-    top: 16.6666666667rem;
+    width: 25rem;
+    left: 15.7rem;
+    top: 8.7rem;
   }
 }
 
@@ -99,8 +99,8 @@
 @media (min-width: 950px) {
   #card-logo {
     width: 3.8888888889rem;
-    left: 28.3rem;
-    top: 18.6111111111rem;
+    left: 17.3rem;
+    top: 10rem;
   }
 }
 
@@ -131,7 +131,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 22rem;
+    padding-left: 4rem;
   }
 }
 .form__label {

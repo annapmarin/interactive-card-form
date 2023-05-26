@@ -12,9 +12,9 @@
       color: var(--white);
 
       @include media('medium') {
-        left: 30rem;
-        top: rem(470);
-        font-size: rem(35);
+        left: 18rem;
+        top: 16.1rem;
+        font-size: 1.5rem;
       }
     }
 
@@ -28,9 +28,9 @@
       color: var(--light-violet);
       
       @include media('medium') {
-        left: 30rem;
-        top: rem(550);
-        font-size: rem(20);
+        left: 18rem;
+        top: 19rem;
+        font-size: 1rem;
       }
     }
 
@@ -43,8 +43,8 @@
       color: var(--light-violet);
 
       @include media('medium') {
-        left: 51.2rem;
-        top: rem(553);
+        left: 35rem;
+        top: 19.1rem;
         font-size: rem(15);
       }
     }
@@ -59,9 +59,9 @@
   top: rem(30);
 
     @include media('medium') {
-      width: 33rem;
-      left: 20rem;
-      top: 40rem;
+      width: 25rem;
+      left: 11rem;
+      top: 24rem;
     }
 }
 
@@ -73,9 +73,9 @@
   top: rem(130);
 
     @include media('medium') {
-      width: 33rem;
-      left: 25.7rem;
-      top: rem(300);
+      width: 25rem;
+      left: 15.7rem;
+      top: 8.7rem;
     }
 }
 
@@ -87,7 +87,7 @@
 
   @include media('medium') {
     width: rem(70);
-    left: 28.3rem;
-    top: rem(335);
+    left: 17.3rem;
+    top: 10rem;
   }
 }

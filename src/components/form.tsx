@@ -3,10 +3,10 @@ import React from "react";
 import iconComplete from "../assets/images/icon-complete.svg";
 
 type FormProps = {
-  sendName: string,
-  sendNumber: number,
-  sendMonth: number,
-  sendYear: number
+  sendName: React.Dispatch<React.SetStateAction<string>>,
+  sendNumber: React.Dispatch<React.SetStateAction<string>>,
+  sendMonth: React.Dispatch<React.SetStateAction<string>>,
+  sendYear: React.Dispatch<React.SetStateAction<string>>
 }
 
 const Form:React.FC<FormProps> = ({ sendName, sendNumber, sendMonth, sendYear }) => {
