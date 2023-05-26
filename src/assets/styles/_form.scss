@@ -1,0 +1,122 @@
+@import 'functions';
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: rem(5);
+  padding: rem(25);
+
+  @include media('medium') {
+    width: rem(600);
+    
+  }
+
+  &__container {
+
+    @include media('medium') {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-left: rem(200);
+      padding-right: rem(20);
+    }
+
+    @include media('large'){
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-left: 22rem;
+    }
+  }
+
+  &__label {
+    font-size: rem(20);
+    color: var(--very-dark-violet);
+    text-transform: uppercase;
+    letter-spacing: rem(1);
+  }
+
+  &__input {
+    height: rem(55);
+    border: rem(1) solid var(--light-violet);
+    border-radius: rem(8);
+    padding-left: rem(10);
+    margin-bottom: rem(10);
+    font-size: 1.2rem;
+
+    &::placeholder {
+     color: var(--dark-violet);
+    }
+
+    &__date {
+      width: rem(65);
+    }
+
+    &__CVC {
+      width: 100%;
+      margin-left: 3.6rem;
+    }
+
+    &__error {
+      border: 1px solid var(--red-error);
+    }
+  }
+
+  &__button {
+    background-color: var(--very-dark-violet);
+    color: var(--light-violet);
+    margin-top: rem(10);
+    height: rem(50);
+    border-radius: rem(10);
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.3rem;
+  }
+
+  &__flex {
+    display: flex;
+    flex-direction: row;
+    gap: rem(30);
+  }
+
+  &__flex2 {
+    display: flex;
+    flex-direction: row;
+    gap: rem(10);
+  }
+
+  &__flex3 {
+    display: flex;
+    flex-direction: row;
+    gap: rem(110);
+  }
+
+  &__error {
+    font-size: rem(15);
+    margin-top: rem(-10);
+    margin-bottom: rem(5);
+    color: var(--red-error);
+    transition: all 200ms ease-in-out;
+  }
+
+  &__image {
+    width: rem(100);
+  }
+
+  &__completed {
+    align-items: center;
+    gap: rem(30);
+  }
+}
+
+.separator {
+  padding-top: rem(305)
+}
+
+.unactive {
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+}

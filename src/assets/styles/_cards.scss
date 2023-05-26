@@ -1,0 +1,93 @@
+@import 'functions';
+
+.cards {
+  &__text {
+    
+    &__number {
+      position: absolute;
+      letter-spacing: rem(2.5);
+      left: rem(40);
+      top: rem(210);
+      font-size: rem(16);
+      color: var(--white);
+
+      @include media('medium') {
+        left: 30rem;
+        top: rem(470);
+        font-size: rem(35);
+      }
+    }
+
+    &__name {
+      position: absolute;
+      left: rem(40);
+      top: rem(250);
+      font-size: rem(9);
+      text-transform: uppercase;
+      letter-spacing: rem(1.2);
+      color: var(--light-violet);
+      
+      @include media('medium') {
+        left: 30rem;
+        top: rem(550);
+        font-size: rem(20);
+      }
+    }
+
+    &__expiration {
+      position: absolute;
+      left: rem(240);
+      top: rem(250);
+      font-size: rem(9);
+      letter-spacing: rem(1.2);
+      color: var(--light-violet);
+
+      @include media('medium') {
+        left: 51.2rem;
+        top: rem(553);
+        font-size: rem(15);
+      }
+    }
+  }
+}
+
+#card-back {
+  display: block;
+  width: rem(285);
+  position: absolute;
+  left: rem(70);
+  top: rem(30);
+
+    @include media('medium') {
+      width: 33rem;
+      left: 20rem;
+      top: 40rem;
+    }
+}
+
+#card-front {
+  display: block;
+  width: rem(285);
+  position: absolute;
+  left: rem(20);
+  top: rem(130);
+
+    @include media('medium') {
+      width: 33rem;
+      left: 25.7rem;
+      top: rem(300);
+    }
+}
+
+#card-logo {
+  position: absolute;
+  width: rem(50);
+  top: rem(150);
+  left: rem(40);
+
+  @include media('medium') {
+    width: rem(70);
+    left: 28.3rem;
+    top: rem(335);
+  }
+}

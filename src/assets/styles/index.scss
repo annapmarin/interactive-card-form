@@ -1,0 +1,38 @@
+@import 'variables';
+@import 'typography';
+@import 'functions';
+@import 'breakpoints';
+@import 'cards';
+@import 'form';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App {
+  width: rem(375);
+  height: fit-content;
+  background: url(../images/bg-main-mobile.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  position: relative;
+  overflow: hidden;
+
+  @include media('medium') {
+    background: url(../images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+    width: 100vw;
+    height: 100vh;
+    padding-left: rem(600);
+  }
+}
